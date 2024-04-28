@@ -1,0 +1,64 @@
+{
+    "es":
+        {"ids":
+            {
+                "#form-submit":"Contáctame"
+            },
+        "classes":
+            {
+                ".nav-link":"Inicio^Perfiles^Trabajo^Sobre Mí^Contacto^Lengüaje",
+                ".dropdown-item":"ÍNGLES^ESPAÑOL",
+                ".btn-works":"Explora Mi Trabajo",
+                ".btn-contact":"Contacta Conmigo",
+                ".btn_see":"Ver Proyecto^Ver Proyecto^Ver Proyecto^Ver Proyecto"
+            },
+        "labels":{
+                "h1":"SOY UN <span class='text-brand'>ANÁLISTA DE SISTEMA</span> DE SALTA, ARGENTINA ^Perfiles en los que Destaco^Mis Proyectos Más Importantes^Mi Formación y Experiencia^¿Interesado en trabajar juntos? Charlemos",
+                "h3":"Educación^Experiencia",
+                "h4":"Lenguaje de Programación ALEPH^CRUD realizado con PHP y PostgreSQL^API Rest realizada con PHP y PSQL^Mi Web^Licenciado en Análisis de Sistemas^Técnico Universitario en Programación^Desarrollador de Aplicaciones Web^Desarrollador en Genexus",
+                "h5":"Consultor^Experto en Soporte^Agente de Cambio",
+                "h6":"PERFILES^TRABAJO^SOBRE MÍ^CONTACTO",
+                "p":"Soy Maximiliano Rivas, y diseño soluciones tecnológicas de alto rendimiento, adaptadas a las necesidades específicas de los usuarios, enfocadas a la eficiencia y optimización.^Puedes consultarme sobre las necesidades de tu negocio.^Especializado en el análisis y diseño de sistemas de información que aportan soluciones informáticas a los clientes.^Es un facilitador del cambio. Un medio por el que se impulsa el cambio.^Lenguaje de programación capaz de modelar estructuras matemáticas de conjuntos y listas de tal forma que los programadores puedan manipular y operar con estas estructuras.^CRUD es el acrónimo de Create (crear), Read (leer), Update (actualizar) y Delete (eliminar). Este concepto se utiliza para describir las operaciones básicas que se realizan en la mayoría de las bases de datos y sistemas de gestión de la información.^Las API permiten interactuar con una computadora o sistema para obtener datos o ejecutar una función, de manera que el sistema entienda la solicitud y la cumpla.^Mi sitio web es una forma de presentarme y mostrar mis mejores trabajos de manera organizada y fácilmente accesible.^Universidad Nacional de Salta (2021 - Ahora)^Un analista de sistemas es responsable de analizar las necesidades de información de una organización y diseñar soluciones tecnológicas para satisfacer esas necesidades. Esto implica comprender los procesos de negocio, identificar áreas de mejora, proponer sistemas informáticos apropiados y colaborar con los desarrolladores para implementar estas soluciones.^Universidad Nacional de Salta (2021 - Ahora)^Un técnico en programación es responsable de escribir, probar y mantener el código informático que compone los programas y aplicaciones. Esto implica traducir los requisitos del software en código de programación, depurar y corregir errores, así como optimizar y mejorar el rendimiento de las aplicaciones existentes.^UNSa (2023 - Ahora)^Un desarrollador de aplicaciones web es un profesional encargado de diseñar, crear, implantar y mantener aplicaciones que funcionan a través de un navegador web. <br>Tecnologías con las que trabajamos: HTML, Bootstrap, Javascript, PHP, PostgreSQL^UNSa (2024 - Ahora)^Un desarrollador GeneXus trabaja con una plataforma de desarrollo ágil que permite crear aplicaciones empresariales multiplataforma de forma rápida y sencilla. Tecnologías con las que trabajamos: Genexus, SQLServer^Redes Sociales"
+            },
+        "atributes": 
+            {
+                "placeholder" : {
+                    "#form-name" : "Ingresa tu nombre",
+                    "#form-email" : "Ingresa tu correo",
+                    "#form-subject" : "Ingresa asunto",
+                    "#form-msg" : "Ingresa tu mensaje"
+                }
+            }
+        },
+    "en":
+        {"ids":
+            {
+                "#form-submit":"Contact me"
+            },
+        "classes":
+            {
+                ".nav-link":"Home^Profiles^Work^About^Contact^Language",
+                ".dropdown-item":"ENGLISH^SPANISH",
+                ".btn-works":"Explore My Work",
+                ".btn-contact":"Contact Me",
+                ".btn_see":"See Project^See Project^See Project^See Project"
+            },
+        "labels":{
+                "h1":"I'M A <span class='text-brand'>SYSTEM ANALYST</span> FROM SALTA, ARGENTINA^Profiles in which I stand out^My Most Important Projects^My Education & Experiance^Interested in working together? Let's talk",
+                "h3":"Education^Experiance",
+                "h4":"ALEPH Programming Language^CRUD made with PHP and PostgreSQL^API Rest made with PHP and PSQL^My Website^Bachelor's Degree in Systems Analysis^University Technician in Programming^Web Applications Developer^Developer at Genexus",
+                "h5":"Consultant^Support Expert^Exchange Agent",
+                "h6":"PROFILES^WORK^ABOUT ME^CONTACT",
+                "p":"I'm Maximiliano Rivas, and I design high-performance technology solutions, tailored to specific user needs and focused on efficiency and optimization.^You can consult me about your business needs.^Specialized in the analysis and design of information systems that provide IT solutions to clients.^It is a facilitator of change. A means by which change is driven.^Programming language capable of modeling set and list mathematical structures in such a way that programmers are able to manipulate and operate with these structures.^CRUD is the acronym for Create, Read, Update and Delete. This concept is used to describe the basic operations performed in most databases and information management systems.^APIs allow you to interact with a computer or system to obtain data or execute a function, so that the system understands the request and fulfills it.^My website is a way for me to introduce myself and showcase my best work in an organized and easily accessible way.^National University of Salta (2021 - Now)^A systems analyst is responsible for analyzing an organization's information needs and designing technology solutions to meet those needs. This involves understanding business processes, identifying areas for improvement, proposing appropriate IT systems and collaborating with developers to implement these solutions.^National University of Salta (2021 - Now)^A programming technician is responsible for writing, testing and maintaining the computer code that makes up programs and applications. This involves translating software requirements into programming code, debugging and bug fixing, as well as optimizing and improving the performance of existing applications.^UNSa (2023 - Now)^A web application developer is a professional in charge of designing, creating, implementing and maintaining applications that work through a web browser. <br>Technologies with which we work: HTML, Bootstrap, Javascript, PHP, PostgreSQL^UNSa (2024 - Now)^A GeneXus developer works with an agile development platform that allows creating cross-platform business applications quickly and easily. Technologies we work with: Genexus, SQLServer^Social Networks"
+            },
+            "atributes": 
+                {
+                    "placeholder" : {
+                        "#form-name" : "Enter your name",
+                        "#form-email" : "Enter your email",
+                        "#form-subject" : "Enter your subject",
+                        "#form-msg" : "Enter your message"
+                    }
+                }
+        }
+}
