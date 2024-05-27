@@ -132,11 +132,11 @@ $(document).ready(() => {
     let message = $("#form-msg").val();
     let email = $("#form-email").val();
 
-
+    let mailtoLink;
     if ($("#form-subject").attr('placeholder').startsWith("Enter")) {
-      const mailtoLink = "mailto:" + encodeURIComponent(to) + "?subject=" + encodeURIComponent(subject) + "&body=Hello, my name is " + encodeURIComponent(name) + " my email address is email " + encodeURIComponent(email) + encodeURIComponent('\n' + message);
+      mailtoLink = "mailto:" + encodeURIComponent(to) + "?subject=" + encodeURIComponent(subject) + "&body=Hello, my name is " + encodeURIComponent(name) + " my email address is email " + encodeURIComponent(email) + encodeURIComponent('\n' + message);
     } else {
-      const mailtoLink = "mailto:" + encodeURIComponent(to) + "?subject=" + encodeURIComponent(subject) + "&body=Hola, mi nombre es " + encodeURIComponent(name) + " mi correo electrónico es " + encodeURIComponent(email) + encodeURIComponent('\n' + message);
+      mailtoLink = "mailto:" + encodeURIComponent(to) + "?subject=" + encodeURIComponent(subject) + "&body=Hola, mi nombre es " + encodeURIComponent(name) + " mi correo electrónico es " + encodeURIComponent(email) + encodeURIComponent('\n' + message);
     }
     window.open(mailtoLink, "_blank");
   });
