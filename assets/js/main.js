@@ -33,7 +33,7 @@ async function obtenerCitaAleatoria() {
   const proxyUrl = "https://cors-anywhere.herokuapp.com/";
 
   // Valores por defecto
-  let quote = 'Do not worry if you have built your castles in the air.They are where they should be.Now put the foundations under them.'
+  let quote = 'Do not worry if you have built your castles in the air. They are where they should be. Now put the foundations under them.'
   let author = 'Henry David Thoreau'
 
   try {
