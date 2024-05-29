@@ -15,7 +15,7 @@ AOS.init({
 });
 
 // Clave de acceso para hacer uso de la API
-const apiKey = "m6yYMmPj2Blz7vVPei2nwTJi4lYUSm0S3w2fBqu6";
+const apiKey = "6HWi4adluIYFncILxVXl7ZVpWdEfA0OkUWJ0XPD2";
 
 // Encabezados que solicita la API con la clave 
 const headers = {
@@ -38,7 +38,8 @@ async function obtenerCitaAleatoria() {
 
   try {
     // Fetch para consumir la API
-    const response = await fetch(proxyUrl + url, { headers: headers });
+    // const response = await fetch(proxyUrl + url, { headers: headers });
+    const response = await fetch(url, { headers: headers });
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
