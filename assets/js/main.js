@@ -38,8 +38,8 @@ async function obtenerCitaAleatoria() {
 
   try {
     // Fetch para consumir la API
-    // const response = await fetch(proxyUrl + url, { headers: headers });
-    const response = await fetch(url, { headers: headers });
+    const response = await fetch(proxyUrl + url, { headers: headers });
+    // const response = await fetch(url, { headers: headers });
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
