@@ -129,8 +129,6 @@ $(document).ready(() => {
   // Manejo de envio de formulario de contacto
   // Se agrega un evento al boton contact me
   $("#emailForm").submit(function (event) {
-    // Quitamos las opciones que vienen predefinidas
-    // event.preventDefault();
 
     //Validamos el email 
     let email = $("#form-email").val();
