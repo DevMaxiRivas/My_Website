@@ -124,7 +124,7 @@ $(document).ready(() => {
   // Se agrega un evento al boton contact me
   $("#emailForm").submit(function (event) {
     // Quitamos las opciones que vienen predefinidas
-    event.preventDefault();
+    // event.preventDefault();
 
     // Obtenemos los valores del formulario
     let to = "maximilianorivas01@gmail.com";
