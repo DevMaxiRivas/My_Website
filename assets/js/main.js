@@ -60,6 +60,12 @@ async function obtenerCitaAleatoria() {
 
 }
 
+function validarEmail(email) {
+  // Expresión regular para validar un email
+  var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return regex.test(email);
+}
+
 
 // AL CARGAR EL DOCUMENTO
 $(document).ready(() => {
@@ -126,12 +132,21 @@ $(document).ready(() => {
     // Quitamos las opciones que vienen predefinidas
     // event.preventDefault();
 
+    //Validamos el email 
+    let email = $("#form-email").val();
+
+    if (!validarEmail(email)) {
+      event.preventDefault(); // Prevenir el envío del formulario
+      if ($("#form-subject").attr('placeholder').startsWith("Enter"))
+        return alert('invalid e-mail address');
+      else
+        return alert('El correo electrónico no es válido');
+    }
     // Obtenemos los valores del formulario
     let to = "maximilianorivas01@gmail.com";
     let subject = $("#form-subject").val();
     let name = $("#form-name").val();
     let message = $("#form-msg").val();
-    let email = $("#form-email").val();
 
     let mailtoLink;
     if ($("#form-subject").attr('placeholder').startsWith("Enter")) {
