@@ -142,7 +142,6 @@ $(document).ready(() => {
     }
 
     let language = $("#form-subject").attr('placeholder').startsWith("Enter") ? 'en' : 'es';
-    console.log(language)
 
     // Envio con API
     const form = new FormData(this);
