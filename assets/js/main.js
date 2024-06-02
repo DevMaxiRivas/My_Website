@@ -128,18 +128,48 @@ $(document).ready(() => {
 
   // Manejo de envio de formulario de contacto
   // Se agrega un evento al boton contact me
-  $("#emailForm").submit(function (event) {
+  $("#emailForm").submit(async function (event) {
 
-    //Validamos el email 
+    // Validamos el email
     let email = $("#form-email").val();
+    event.preventDefault(); // Prevenir el envío del formulario
 
     if (!validarEmail(email)) {
-      event.preventDefault(); // Prevenir el envío del formulario
       if ($("#form-subject").attr('placeholder').startsWith("Enter"))
         return alert('invalid e-mail address');
       else
         return alert('El correo electrónico no es válido');
     }
+
+    let language = $("#form-subject").attr('placeholder').startsWith("Enter") ? 'en' : 'es';
+    console.log(language)
+
+    // Envio con API
+    const form = new FormData(this);
+    const response =
+      await fetch(this.action, {
+        method: this.method,
+        body: form,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+    if (response.ok) {
+      this.reset()
+      if (language == 'en')
+        alert('Thank you for contacting me, I will write you soon')
+      else
+        alert('Gracias por contactarme, te escribiré pronto')
+    } else {
+      if (language == 'en')
+        alert('An error occurred while sending the form, please reload the page.')
+      else
+        alert('Ocurrio un error al enviar el formulario, recargue la página')
+    }
+
+
+    // Envio con MailTO
     // Obtenemos los valores del formulario
     let to = "maximilianorivas01@gmail.com";
     let subject = $("#form-subject").val();
@@ -147,12 +177,13 @@ $(document).ready(() => {
     let message = $("#form-msg").val();
 
     let mailtoLink;
-    if ($("#form-subject").attr('placeholder').startsWith("Enter")) {
+    if (language == 'en') {
       mailtoLink = "mailto:" + encodeURIComponent(to) + "?subject=" + encodeURIComponent(subject) + "&body=Hello, my name is " + encodeURIComponent(name) + " my email address is email " + encodeURIComponent(email) + encodeURIComponent('\n' + message);
     } else {
       mailtoLink = "mailto:" + encodeURIComponent(to) + "?subject=" + encodeURIComponent(subject) + "&body=Hola, mi nombre es " + encodeURIComponent(name) + " mi correo electrónico es " + encodeURIComponent(email) + encodeURIComponent('\n' + message);
     }
     window.open(mailtoLink, "_blank");
+
   });
 
   // Cargar Cita Aleatoria
