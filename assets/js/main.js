@@ -157,31 +157,15 @@ $(document).ready(() => {
     if (response.ok) {
       this.reset()
       if (language == 'en')
-        alert('Thank you for contacting me, I will write you soon')
+        alert('Thank you for contacting me, I will write you soon');
       else
-        alert('Gracias por contactarme, te escribiré pronto')
+        alert('Gracias por contactarme, te escribiré pronto');
     } else {
       if (language == 'en')
-        alert('An error occurred while sending the form, please reload the page.')
+        alert('An error occurred while sending the form, please reload the page.');
       else
-        alert('Ocurrio un error al enviar el formulario, recargue la página')
+        alert('Ocurrio un error al enviar el formulario, recargue la página');
     }
-
-
-    // Envio con MailTO
-    // Obtenemos los valores del formulario
-    let to = "maximilianorivas01@gmail.com";
-    let subject = $("#form-subject").val();
-    let name = $("#form-name").val();
-    let message = $("#form-msg").val();
-
-    let mailtoLink;
-    if (language == 'en') {
-      mailtoLink = "mailto:" + encodeURIComponent(to) + "?subject=" + encodeURIComponent(subject) + "&body=Hello, my name is " + encodeURIComponent(name) + " my email address is email " + encodeURIComponent(email) + encodeURIComponent('\n' + message);
-    } else {
-      mailtoLink = "mailto:" + encodeURIComponent(to) + "?subject=" + encodeURIComponent(subject) + "&body=Hola, mi nombre es " + encodeURIComponent(name) + " mi correo electrónico es " + encodeURIComponent(email) + encodeURIComponent('\n' + message);
-    }
-    window.open(mailtoLink, "_blank");
 
   });
 
