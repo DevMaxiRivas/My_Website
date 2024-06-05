@@ -76,9 +76,13 @@ $(document).ready(() => {
 
     // Realizar acciones según el idioma seleccionado
     if (selectedLanguage === 'SPANISH' || selectedLanguage === 'ESPAÑOL') {
+      // Cabiar title de la pagina
+      $(document).prop('title', 'Maximiliano Rivas Análista de Sistemas');
       // Cambiar el contenido de la página al español
       changeLanguaje('es');
     } else if (selectedLanguage === 'ENGLISH' || selectedLanguage === 'ÍNGLES') {
+      // Cabiar title de la pagina
+      $(document).prop('title', 'Maximiliano Rivas System Analyst');
       // Cambiar el contenido de la página al inglés
       changeLanguaje('en');
     }
@@ -132,16 +136,16 @@ $(document).ready(() => {
 
     // Validamos el email
     let email = $("#form-email").val();
+    let language = $("#form-subject").attr('placeholder').startsWith("Enter") ? 'en' : 'es';
     event.preventDefault(); // Prevenir el envío del formulario
 
     if (!validarEmail(email)) {
-      if ($("#form-subject").attr('placeholder').startsWith("Enter"))
+      if (language == 'en')
         return alert('invalid e-mail address');
       else
         return alert('El correo electrónico no es válido');
     }
 
-    let language = $("#form-subject").attr('placeholder').startsWith("Enter") ? 'en' : 'es';
 
     // Envio con API
     const form = new FormData(this);
