@@ -15,7 +15,7 @@ AOS.init({
 });
 
 // Clave de acceso para hacer uso de la API
-const apiKey = "m6yYMmPj2Blz7vVPei2nwTJi4lYUSm0S3w2fBqu6";
+const apiKey = "LmyQcXpZUW63AcyylfcB8S8oCpcPC0cV2tKrabnI";
 
 // Encabezados que solicita la API con la clave 
 const headers = {
